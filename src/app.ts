@@ -94,7 +94,7 @@ app.get('/books', async (req: Request, res: Response) => {
   res.json(books);
 });
 
-// Borrow a Book
+// Borrow a book
 app.post('/users/:userId/borrow/:bookId', async (req: Request, res: Response, next: NextFunction) => {
   try {
     await borrowBookSchema.validateAsync(req.params);
@@ -124,7 +124,7 @@ app.post('/users/:userId/borrow/:bookId', async (req: Request, res: Response, ne
   }
 });
 
-// Return a Book
+// Return a book
 app.post('/users/:userId/return/:bookId', async (req: Request, res: Response, next: NextFunction) => {
   try {
     await returnBookSchema.validateAsync({ ...req.params, ...req.body });
