@@ -1,5 +1,5 @@
 # Library Management System
-Library Management app using Node.js, express.js, TypeScript, and MySQL.
+Library Management app using Node.js, Express.js, TypeScript, and MySQL.
 
 ## Requirements:
 There should be **mysql** service installed on the system. MySQL user name and password can be set on the src/database.ts file.
